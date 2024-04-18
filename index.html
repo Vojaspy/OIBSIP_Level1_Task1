@@ -5,69 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Landing Page</title>
-    <style>
-        
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 0;
-            margin: 0;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .item {
-            width: 300px;
-        }
-
-        .Home ul {
-            display: flex;
-            list-style-type: none;
-            justify-content: space-between;
-        }
-
-        .item3 {
-            justify-content: end;
-        }
-        .Section1{
-            background-image: url('back.jpg'); 
-        }
-        nav ul{
-            display: flex;
-            justify-content: space-around; 
-            margin-top: 0px;   
-        }
-        nav ul li a{
-            color: wheat;
-            text-decoration: none;
-            position: sticky;
-        }
-        .tagline{
-            margin-top: 0;
-        }
-        .images{
-            display: flex;
-            justify-content: space-around;
-            margin-top:40px ;
-        }
-
-        .boxitem1{
-            width: 300px;
-        }
-        .boxitem2{
-            width: 300px;
-        }
-        .boxitem3{
-            width: 300px;
-        }
-    
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container" style="margin-top: 0px;">
-        <section id="Home" class="Section1" style="margin-top: 0;">
+    <div class="container-fluid">
+        <section id="Home" class="Section1">
             <nav>
                 <ul>
                     <li>
@@ -78,22 +21,22 @@
                     </li>
                     <li>
                         <h3><a href="#Contact" style="font-size: 25px;">Contact</a></h3>
-                    </li><li>
+                    </li>
+                    <li>
                         <h3><a href="#Reviews" style="font-size: 25px;">Reviews</a></h3>
                     </li>
                 </ul>
             </nav>
             <div class="images">
                 <img src="Dumble.jpeg" alt="" class="boxitem3">
-                <img src="image.png" alt="logo" class="boxitem2">
+                <img src="Logo.jpeg" alt="logo" class="boxitem2" style="border-radius: 5px;">
                 <img src="Box.jpeg" alt="" class="boxitem1">
             </div>
 
             <div class="tagline" style="text-align: center;  color: white;">
                 <p style="font-style: inherit; font-size: 60px;">Muscle Rider Gym</p>
-                <!-- <p style="font-style: italic; font-size: 40px;">Sweat is Fat Crying</p> -->
             </div>
-            <div class="Home" style="margin-bottom: 40px;">
+            <div class="Home">
                 <header>
                     <ul>
                         <li class="item item1" style="color: white;">
@@ -110,11 +53,162 @@
                 </header>
             </div>
         </section>
+        <section id="InsideGym" class="Section2">
+            <h2 style="text-align: center; color: white; padding-top: 10px; font-size: 32px;">Inside the Gym</h2>
+            <div>
+                <!-- <h1 style=" text-align: center;">Sweat is fat crying</h1> -->
+                <h1 style="text-align: center; font-size: 50px; margin-bottom: 0px; width: 1000px; margin-left: 100px;">
+                    "Even the Greatest was once a beginner. Don't be afraid to take first step"</h1>
+                <h2 style=" text-align: center; margin-left:200px ; margin-bottom: 70px;">~Arnold Schwarzenegger</h2>
+            </div>
+            <div class="insideImages" style="display: flex; justify-content: space-around;">
 
-        <section id="InsideGym">  
-            <h1>This is Inside Gyma</h1>
+                <div class="card" style="background-color: white;  margin-bottom: 10px;">
+                    <img src="Strength.jpeg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Strength</b></h4>
+                        <p>Strength is the foundation of fitness. Whether you're a seasoned
+                            lifter or just beginning
+                            your fitness journey, building strength is key to unlocking your body's full potential and
+                            achieving your goals.</p>
+                    </div>
+                </div>
+                <div class="card" style="background-color: white;  margin-bottom: 10px;">
+                    <img src="Cardio.jpeg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Cardio</b></h4>
+                        <p">Cardiovascular exercise, or cardio for short, is the cornerstone of
+                            a healthy lifestyle.
+                            Whether you're looking to improve your heart health, burn calories, or enhance your overall
+                            well-being, cardio workouts are an essential part of any fitness routine.</p>
+                    </div>
+                </div>
+                <div class="card" style="background-color: white;  margin-bottom: 10px;">
+                    <img src="Zumba.jpeg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Zumba</b></h4>
+                        <p>Looking for a fun and effective way to get fit while dancing to
+                            irresistible beats? Look no
+                            further than Zumba. Our Zumba classes combine high-energy music with
+                            dynamic dance moves to create a one-of-a-kind workout experience that will leave you
+                            sweating, smiling, and craving more.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-evenly; margin-top: 30px; ">
+                <div class="card" style="background-color: white;  margin-bottom: 50px;">
+                    <img src="Calisthenics.jpeg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Calisthenics</b></h4>
+                        <p>Calisthenics is the art of using your own bodyweight to build
+                            strength, flexibility, and
+                            endurance, and at The Muscle Rider, we're passionate about helping you unlock your full
+                            potential through this empowering form of exercise.</p>
+                    </div>
+                </div>
+                <div class="card" style="background-color: white;  margin-bottom: 10px;">
+                    <img src="MartialArts.jpeg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Martial Arts</b></h4>
+                        <p >Martial arts is not just a physical activity—it's a way of life. At
+                            The Muscle Rider, we're
+                            proud to offer a diverse range of martial arts disciplines, each with its own unique blend
+                            of tradition, technique, and philosophy. Whether you're looking to learn self-defense,
+                            improve your fitness, or cultivate inner peace, our martial arts programs provide the
+                            perfect opportunity for you to grow and thrive.</p>
+                    </div>
+                </div>
+            </div>
         </section>
+        <section id="Contact" class="Section3">
+            <h1 style="font-size: 32px; color: white; padding-top: 10px;">Contact</h1>
+            <div>
+                <h1 style="text-align: center; font-size: 50px; margin-bottom: 0px; color: white;">"Give the Best to become the Beast"
+                </h1>
+                <h2 style=" text-align: center; margin-left:200px ; margin-bottom: 70px; color: white;">~CBum</h2>
+            </div>
+            <div style="display: flex; justify-content: space-evenly;">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.04711156091!2d73.78056543154418!3d18.52459859950238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1713381984852!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0; margin-bottom: 10px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="cont">
+                    <h2 style="color: beige;">Meet our Trainers</h2>
+                    <div>
+                        <div class="trainers-container">
+                            <div class="trainer">
+                                <img src="trainer1.png" alt="Trainer 1" class="trainer-image">
+                                <h3 class="trainer-name">Akshay</h3>
+                                <p class="trainer-description">Certified Trainer</p>
+                            </div>
+                            <div class="trainer">
+                                <img src="Trainer3.jpeg" alt="Trainer 2" class="trainer-image">
+                                <h3 class="trainer-name">Ritika</h3>
+                                <p class="trainer-description">Calisthenics Instructor</p>
+                            </div>
+                            <div class="trainer">
+                                <img src="trainer2.png" alt="Trainer 3" class="trainer-image">
+                                <h3 class="trainer-name">Abhishek</h3>
+                                <p class="trainer-description">Strength Coach</p>
+                            </div>
+                            <div class="trainer">
+                                <img src="Zumba.jpeg" alt="Trainer 4" class="trainer-image">
+                                <h3 class="trainer-name">Jacqueline</h3>
+                                <p class="trainer-description">Zumba Instructor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review-section" id="Reviews">
+            <h2 style="color: white; margin-top: 20px;">Customer Reviews</h2>
+            <div>
+                <!-- <h1 style=" text-align: center;">Sweat is fat crying</h1> -->
+                <h1 style="text-align: center; font-size: 50px; margin-bottom: 0px; width: 1000px; margin-left: 150px; color: white; ">
+                    "Sweat is Fat Crying"</h1>
+                <h2 style=" text-align: center; margin-left:200px ; margin-bottom: 70px; color: white;">~Ronnie Coleman</h2>
+            </div>
+
+            <div class="review" style="color: black;">
+                <div class="reviewer-info"  style="color: black;">
+                    <p class="reviewer-name">Vidyut</p>
+                </div>
+                <p class="review-text">"I've been a member of The Muscle Rider for over a year now, and I can honestly
+                    say it's been a game-changer for me. From the moment I walked in, I was impressed by the
+                    state-of-the-art facilities, knowledgeable staff, and welcoming atmosphere."</p>
+            </div>
+            <div class="review">
+                <div class="reviewer-info">
+
+                    <p class="reviewer-name">Akshay</p>
+                </div>
+                <p class="review-text">"I've been a member of The Muscle Rider for six months now, and I couldn't be
+                    happier with my experience. The staff is friendly and knowledgeable, the equipment is top-notch, and
+                    the facilities are always clean and well-maintained. Plus, the variety of classes offered—from
+                    cardio
+                    to strength training—keeps me motivated and engaged. Highly recommend!"</p>
+            </div>
+            <div class="review">
+                <div class="reviewer-info">
+
+                    <p class="reviewer-name">Hrithik</p>
+                </div>
+                <p class="review-text">"I recently joined The Muscle Rider, and I'm already seeing incredible results.
+                    The trainers are incredibly supportive and push me to reach my fitness goals, and the community
+                    atmosphere makes working out feel like a fun social event rather than a chore. Plus, the gym's
+                    flexible hours fit perfectly into my busy schedule. 5 stars!"</p>
+            </div>
+            <footer style=" text-align: left; color: beige; font-size: 25px;">
+                All Rights Reserved &copy; 2024 | Designed By Vojas Gonnade
+            </footer>
+        </section>
+
+
     </div>
+
 </body>
 
 </html>
